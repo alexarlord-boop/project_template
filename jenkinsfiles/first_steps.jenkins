@@ -11,12 +11,12 @@ pipeline {
         timestamps()
     }
     stages {
-        stage("A step") {
+        stage("First step") {
             steps {
                 sh 'hostname'
             }
         }
-        stage("B step") {
+        stage("Second step") {
             steps {
                 sh 'uptime'
             }
