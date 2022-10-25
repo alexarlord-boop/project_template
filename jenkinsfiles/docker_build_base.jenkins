@@ -34,9 +34,7 @@ pipeline {
         stage("docker push") {
             steps {
                 echo " ============== start pushing image =================="
-                sh '''
-                docker push alexarlord/toolbox:latest
-                '''
+                sh 'sudo docker push alexarlord/toolbox:latest'
             }
         }
     }
